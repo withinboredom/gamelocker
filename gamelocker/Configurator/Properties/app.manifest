@@ -2,7 +2,7 @@
 <asmv1:assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <assemblyIdentity version="1.0.0.0" name="MyApplication.app" />
   <!--
-  /*This file is part of GameLocker.
+  /* Copyright 2009, 2010 (C) Robert Landers (landers.robert@gmail.com)
 
     GameLocker is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

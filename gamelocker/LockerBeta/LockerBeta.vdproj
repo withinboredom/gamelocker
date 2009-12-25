@@ -15,13 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_1A6BCBC9F7AA4C5B8BC8DEE761580C69"
+        "MsmKey" = "8:_08BF3A53612C499AB21149076FD25C70"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_797B5262720140488957938A66314DF3"
+        "MsmKey" = "8:_C46EB47F3F4442E18B031C7A483EAF1E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -156,10 +156,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1A6BCBC9F7AA4C5B8BC8DEE761580C69"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_08BF3A53612C499AB21149076FD25C70"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\Downloads\\gpl.txt"
-            "TargetName" = "8:gpl.txt"
+            "SourcePath" = "8:..\\Configurator\\gpl.rtf"
+            "TargetName" = "8:gpl.rtf"
             "Tag" = "8:"
             "Folder" = "8:_580AF0F883914E3B9B029C3773AF537D"
             "Condition" = "8:"
@@ -176,10 +176,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_797B5262720140488957938A66314DF3"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C46EB47F3F4442E18B031C7A483EAF1E"
             {
-            "SourcePath" = "8:..\\Configurator\\BackUp.txt"
-            "TargetName" = "8:BackUp.txt"
+            "SourcePath" = "8:..\\Configurator\\BackUp.rtf"
+            "TargetName" = "8:BackUp.rtf"
             "Tag" = "8:"
             "Folder" = "8:_580AF0F883914E3B9B029C3773AF537D"
             "Condition" = "8:"
@@ -264,7 +264,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GameLockerBeta"
         "ProductCode" = "8:{7959C3B7-CA70-452B-A214-73C91D480D14}"
-        "PackageCode" = "8:{48A52EB9-5B3D-4F97-93D3-F456F82B61FD}"
+        "PackageCode" = "8:{CED61DFB-227A-4486-8569-84CDACBE3CEF}"
         "UpgradeCode" = "8:{E20DE6EA-B0FC-4EF3-AF69-5630D0E42244}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
@@ -500,7 +500,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_797B5262720140488957938A66314DF3"
+                            "Value" = "8:_C46EB47F3F4442E18B031C7A483EAF1E"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"
@@ -613,7 +613,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_797B5262720140488957938A66314DF3"
+                            "Value" = "8:_C46EB47F3F4442E18B031C7A483EAF1E"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"
@@ -752,7 +752,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_1A6BCBC9F7AA4C5B8BC8DEE761580C69"
+                            "Value" = "8:_08BF3A53612C499AB21149076FD25C70"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"
@@ -830,7 +830,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_1A6BCBC9F7AA4C5B8BC8DEE761580C69"
+                            "Value" = "8:_08BF3A53612C499AB21149076FD25C70"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"
@@ -998,34 +998,6 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4163FAF8D5CC4E9D8C4CF5575C4117DC"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_580AF0F883914E3B9B029C3773AF537D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:ContentFiles"
-            "OutputProjectGuid" = "8:{B9DAF244-B992-49F5-8724-4CE83F96B385}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F23AAC2B7F39460AB22F4A0B7F2998F7"
             {
             "SourcePath" = "8:..\\Configurator\\obj\\x86\\Release\\Configurator.exe"
