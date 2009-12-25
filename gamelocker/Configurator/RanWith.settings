@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Configurator" GeneratedClassName="lockerSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="fileList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;begin&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="fileMap" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;begin&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="checkInWait" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:05:00</Value>
+    </Setting>
+    <Setting Name="timedGame" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:30:00</Value>
+    </Setting>
+    <Setting Name="probability" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="waitToPlay" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:30:00</Value>
+    </Setting>
+    <Setting Name="incorrectWait" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">00:01:00</Value>
+    </Setting>
+    <Setting Name="lastTry" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2009-12-23</Value>
+    </Setting>
+    <Setting Name="alertBeforeKill" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="alertAudible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="alertVisual" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="alertTakeFocus" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
