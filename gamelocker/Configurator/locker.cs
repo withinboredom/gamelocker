@@ -36,6 +36,7 @@ namespace Configurator
             settings.Reload();
             settings.fileList.Add(filename);
             settings.Save();
+            SettingsSystem.Sync();
             return filename;
         }
 

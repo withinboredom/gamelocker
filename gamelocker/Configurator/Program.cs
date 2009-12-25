@@ -51,6 +51,8 @@ namespace Configurator
             }
             settings.Save();
 
+            SettingsSystem.init();
+            SettingsSystem.Sync();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PlayGame());

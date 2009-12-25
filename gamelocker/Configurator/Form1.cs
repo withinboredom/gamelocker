@@ -44,11 +44,11 @@ namespace Configurator
 
         }
 
-        lockerSettings settings = new lockerSettings();
+        lockerSettings settings = SettingsSystem.GetSettings();
 
         private void refreshList()
         {
-            settings.Reload();
+            settings = SettingsSystem.GetSettings();
             listBoxGames.Items.Clear();
             treeViewStats.Nodes.Clear();
             treeViewStats.Nodes.Add(new TreeNode("Statistics"));
@@ -77,7 +77,7 @@ namespace Configurator
                 if (named.ShowDialog() == DialogResult.OK)
                 {
                     locker.lockFile(openFileDialogExecutible.FileName);
-                    settings.Reload();
+                    settings = SettingsSystem.GetSettings();
                     settings.fileMap.Add(named.textBox1.Text);
                     settings.Save();
                     refreshList();
@@ -151,7 +151,7 @@ namespace Configurator
                         if (drive.numericUpDownPicker.Value == rand.Next(settings.probability + 1))
                         {
                             settings.lastTry = DateTime.Now;
-                            settings.Reload();
+                            settings = SettingsSystem.GetSettings();
                             Game game = (Game)listBoxGames.SelectedItem;
                             if (game == null)
                             {
@@ -220,12 +220,11 @@ namespace Configurator
         {
             if (gameRunning == null)
             {
-                settings.Reload();
+                settings = SettingsSystem.GetSettings();
                 TimeSpan span = (DateTime.Now - settings.lastTry);
                 if (settings.waitToPlay < span)
                 {
                     timerTimedGame.Interval = (int)settings.timedGame.TotalMilliseconds;
-                    settings.Reload();
                     Game game = (Game)listBoxGames.SelectedItem;
                     if (game == null)
                     {
@@ -249,7 +248,8 @@ namespace Configurator
 
         private void timerTimedGame_Tick(object sender, EventArgs e)
         {
-            settings.Reload();
+            //settings.Reload();
+            settings = SettingsSystem.GetSettings(true);
             if (settings.alertBeforeKill)
             {
                 //alert the user by sound
@@ -366,7 +366,7 @@ namespace Configurator
                 if (drive.numericUpDownPicker.Value == rand.Next(settings.probability + 1))
                 {
                     options.ShowDialog();
-                    settings.Reload();
+                    settings = SettingsSystem.GetSettings(true);
                 }
                 else
                 {

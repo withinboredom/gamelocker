@@ -93,7 +93,7 @@ namespace Configurator
 
         public Game CheckIn(bool emergency)
         {
-            lockerSettings settings = new lockerSettings();
+            lockerSettings settings = SettingsSystem.GetSettings(true);
             //alert the user of its death
             if (!emergency)
             proc.WaitForExit((int)settings.checkInWait.TotalMilliseconds);
@@ -115,9 +115,10 @@ namespace Configurator
             }
             locker.removeFile(unlock);
             TimeLogFactory.saveLog(timeLog);
+            settings = SettingsSystem.GetSettings();
             settings.lastTry = DateTime.Now;
             checkedout = false;
-            settings.Save();
+            SettingsSystem.Sync();
             return this;
         }
     }
