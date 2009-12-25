@@ -42,7 +42,11 @@ namespace Configurator
             if (settings.fileList.Count > 0 && settings.fileList[0] == "begin")
                 settings.fileList.Clear();
             if (settings.fileMap.Count > 0 && settings.fileMap[0] == "begin")
+            {
                 settings.fileMap.Clear();
+                OptionsForm options = new OptionsForm();
+                options.ShowDialog();
+            }
             settings.Save();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -54,10 +54,10 @@ namespace Configurator
             this.optionsWaitToPlay = new System.Windows.Forms.NumericUpDown();
             this.optionsIncorrectWait = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.optionsAlertBeforeKill = new System.Windows.Forms.CheckBox();
-            this.optionsAudible = new System.Windows.Forms.CheckBox();
-            this.optionsVisual = new System.Windows.Forms.CheckBox();
             this.optionsTakeFocus = new System.Windows.Forms.CheckBox();
+            this.optionsVisual = new System.Windows.Forms.CheckBox();
+            this.optionsAudible = new System.Windows.Forms.CheckBox();
+            this.optionsAlertBeforeKill = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -155,31 +155,20 @@ namespace Configurator
             this.groupBox1.Controls.Add(this.optionsAlertBeforeKill);
             this.groupBox1.Location = new System.Drawing.Point(12, 151);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 154);
+            this.groupBox1.Size = new System.Drawing.Size(243, 154);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alerts";
             // 
-            // optionsAlertBeforeKill
+            // optionsTakeFocus
             // 
-            this.optionsAlertBeforeKill.AutoSize = true;
-            this.optionsAlertBeforeKill.Location = new System.Drawing.Point(6, 19);
-            this.optionsAlertBeforeKill.Name = "optionsAlertBeforeKill";
-            this.optionsAlertBeforeKill.Size = new System.Drawing.Size(143, 17);
-            this.optionsAlertBeforeKill.TabIndex = 10;
-            this.optionsAlertBeforeKill.Text = "Alert at end of time game";
-            this.optionsAlertBeforeKill.UseVisualStyleBackColor = true;
-            this.optionsAlertBeforeKill.CheckedChanged += new System.EventHandler(this.optionsAlertBeforeKill_CheckedChanged);
-            // 
-            // optionsAudible
-            // 
-            this.optionsAudible.AutoSize = true;
-            this.optionsAudible.Location = new System.Drawing.Point(22, 42);
-            this.optionsAudible.Name = "optionsAudible";
-            this.optionsAudible.Size = new System.Drawing.Size(61, 17);
-            this.optionsAudible.TabIndex = 10;
-            this.optionsAudible.Text = "Audible";
-            this.optionsAudible.UseVisualStyleBackColor = true;
+            this.optionsTakeFocus.AutoSize = true;
+            this.optionsTakeFocus.Location = new System.Drawing.Point(22, 88);
+            this.optionsTakeFocus.Name = "optionsTakeFocus";
+            this.optionsTakeFocus.Size = new System.Drawing.Size(220, 17);
+            this.optionsTakeFocus.TabIndex = 10;
+            this.optionsTakeFocus.Text = "Pop up this window when its time to quit?";
+            this.optionsTakeFocus.UseVisualStyleBackColor = true;
             // 
             // optionsVisual
             // 
@@ -191,33 +180,44 @@ namespace Configurator
             this.optionsVisual.Text = "Visual";
             this.optionsVisual.UseVisualStyleBackColor = true;
             // 
-            // optionsTakeFocus
+            // optionsAudible
             // 
-            this.optionsTakeFocus.AutoSize = true;
-            this.optionsTakeFocus.Location = new System.Drawing.Point(22, 88);
-            this.optionsTakeFocus.Name = "optionsTakeFocus";
-            this.optionsTakeFocus.Size = new System.Drawing.Size(55, 17);
-            this.optionsTakeFocus.TabIndex = 10;
-            this.optionsTakeFocus.Text = "Focus";
-            this.optionsTakeFocus.UseVisualStyleBackColor = true;
+            this.optionsAudible.AutoSize = true;
+            this.optionsAudible.Location = new System.Drawing.Point(22, 42);
+            this.optionsAudible.Name = "optionsAudible";
+            this.optionsAudible.Size = new System.Drawing.Size(61, 17);
+            this.optionsAudible.TabIndex = 10;
+            this.optionsAudible.Text = "Audible";
+            this.optionsAudible.UseVisualStyleBackColor = true;
+            // 
+            // optionsAlertBeforeKill
+            // 
+            this.optionsAlertBeforeKill.AutoSize = true;
+            this.optionsAlertBeforeKill.Location = new System.Drawing.Point(6, 19);
+            this.optionsAlertBeforeKill.Name = "optionsAlertBeforeKill";
+            this.optionsAlertBeforeKill.Size = new System.Drawing.Size(155, 17);
+            this.optionsAlertBeforeKill.TabIndex = 10;
+            this.optionsAlertBeforeKill.Text = "Alert at end of timed game?";
+            this.optionsAlertBeforeKill.UseVisualStyleBackColor = true;
+            this.optionsAlertBeforeKill.CheckedChanged += new System.EventHandler(this.optionsAlertBeforeKill_CheckedChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(138, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.Size = new System.Drawing.Size(229, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Time to wait before game kill";
+            this.label1.Text = "How many minutes does it take to exit a game?";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(138, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 13);
+            this.label2.Size = new System.Drawing.Size(196, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "How long to play a timed game";
+            this.label2.Text = "How many minutes to play a timed game";
             // 
             // label3
             // 
@@ -233,18 +233,18 @@ namespace Configurator
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(138, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 13);
+            this.label4.Size = new System.Drawing.Size(293, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "How long before play again";
+            this.label4.Text = "How many minutes do you want to be locked out of a game?";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(138, 118);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(176, 13);
+            this.label5.Size = new System.Drawing.Size(307, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "How long to wait if incorrect number";
+            this.label5.Text = "How many minutes do you want to wait if you guess incorrectly?";
             // 
             // OptionsForm
             // 
@@ -252,7 +252,7 @@ namespace Configurator
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(369, 346);
+            this.ClientSize = new System.Drawing.Size(455, 346);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

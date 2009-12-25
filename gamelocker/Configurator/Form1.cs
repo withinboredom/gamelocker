@@ -301,8 +301,28 @@ namespace Configurator
         private void buttonOptions_Click(object sender, EventArgs e)
         {
             OptionsForm options = new OptionsForm();
-            options.ShowDialog();
-            settings.Reload();
+            imProbabilityDrive drive = new imProbabilityDrive();
+            Random rand = new Random();
+            TimeSpan span = DateTime.Now - settings.lastTry;
+            if (drive.ShowDialog() == DialogResult.OK)
+            {
+                if (drive.numericUpDownPicker.Value == rand.Next(settings.probability + 1))
+                {
+                    options.ShowDialog();
+                    settings.Reload();
+                }
+                else
+                {
+                    span = settings.incorrectWait;
+                    MessageBox.Show("You have guessed incorrectly, you must wait " + span.Hours + ":" + span.Minutes + ":" + span.Seconds + " before trying again", "oops");
+                }
+            }
+        }
+
+        private void buttonAbout_Click(object sender, EventArgs e)
+        {
+            AboutBox1 about = new AboutBox1();
+            about.Show();
         }
     }
 }
