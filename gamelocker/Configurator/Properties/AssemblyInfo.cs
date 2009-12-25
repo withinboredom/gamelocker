@@ -17,14 +17,15 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Resources;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("The Game Locker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("To provide a more productive environment for the end user")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("RLanders")]
+[assembly: AssemblyCompany("A Robert Landers Production")]
 [assembly: AssemblyProduct("The Game Locker")]
 [assembly: AssemblyCopyright("Copyright © Robert Landers 2010")]
 [assembly: AssemblyTrademark("")]
@@ -49,4 +50,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.1.*")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: NeutralResourcesLanguageAttribute("en-US")]
