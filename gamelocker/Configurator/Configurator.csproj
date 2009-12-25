@@ -185,6 +185,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>lockerSettings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SettingsSystem.cs" />
     <Compile Include="TimeLog.cs" />
     <Compile Include="TimeLogFactory.cs" />
   </ItemGroup>
