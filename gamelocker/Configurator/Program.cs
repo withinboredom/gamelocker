@@ -39,23 +39,25 @@ namespace Configurator
             }
             //initialize Application
             lockerSettings settings = new lockerSettings();
-            if (settings.fileList.Count > 0 && settings.fileList[0] == "begin")
-                settings.fileList.Clear();
+            settings.Reset();
             if (settings.fileMap.Count > 0 && settings.fileMap[0] == "begin")
             {
                 settings.fileMap.Clear();
-                OptionsForm options = new OptionsForm();
-                options.ShowDialog();
+                settings.fileList.Clear();
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new OptionsForm());
                 settings.Save();
                 Application.Restart();
             }
-            settings.Save();
-
-            SettingsSystem.init();
-            SettingsSystem.Sync();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PlayGame());
+            else
+            {
+                SettingsSystem.init();
+                SettingsSystem.Sync();
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new PlayGame());
+            }
         }
     }
 }

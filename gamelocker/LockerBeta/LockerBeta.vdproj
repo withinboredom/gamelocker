@@ -264,7 +264,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GameLockerBeta"
         "ProductCode" = "8:{7959C3B7-CA70-452B-A214-73C91D480D14}"
-        "PackageCode" = "8:{F00A33DF-131B-4D41-B62C-9AF2C27A5BC1}"
+        "PackageCode" = "8:{A725D7CA-EB29-4C9F-AE40-EA8BB8611A0A}"
         "UpgradeCode" = "8:{E20DE6EA-B0FC-4EF3-AF69-5630D0E42244}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
@@ -278,7 +278,7 @@
         "Subject" = "8:"
         "ARPCONTACT" = "8:Robert Landers"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:To create a more productive universe"
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
@@ -1000,7 +1000,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F23AAC2B7F39460AB22F4A0B7F2998F7"
             {
-            "SourcePath" = "8:..\\Configurator\\obj\\x86\\Release\\Configurator.exe"
+            "SourcePath" = "8:..\\Configurator\\obj\\Release\\Configurator.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_580AF0F883914E3B9B029C3773AF537D"

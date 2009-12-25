@@ -318,6 +318,7 @@ namespace Configurator
                     settings.fileMap.Add(file);
                 }
                 br.Close();
+                settings.Save();
             }
             else
             {
