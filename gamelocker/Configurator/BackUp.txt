@@ -1,0 +1,5 @@
+﻿WARNING!!
+
+Please back up any locked files JUST IN CASE the program locks them FOREVER!
+
+- your lovely programmer
