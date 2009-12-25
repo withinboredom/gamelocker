@@ -39,7 +39,6 @@ namespace Configurator
             }
             //initialize Application
             lockerSettings settings = new lockerSettings();
-            settings.Reset();
             if (settings.fileMap.Count > 0 && settings.fileMap[0] == "begin")
             {
                 settings.fileMap.Clear();
