@@ -22,6 +22,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace Configurator
 {
@@ -177,6 +178,8 @@ namespace Configurator
 
         private void PlayGame_Load(object sender, EventArgs e)
         {
+            //load Game List
+            loadLocker();
             refreshList();
             notifyIcon.Visible = true;
         }
@@ -265,7 +268,61 @@ namespace Configurator
 
         private void onKill(object sender, FormClosedEventArgs e)
         {
-            
+            saveLocker();
+        }
+
+        private void saveLocker()
+        {
+            //save game list
+            FileStream fsout = new FileStream(locker.homeDir + "Locker.dat", FileMode.Create, FileAccess.Write);
+            BinaryWriter bwFile = new BinaryWriter(fsout);
+            //save count of files
+            Int32 fileCount = settings.fileList.Count;
+            bwFile.Write(fileCount);
+            //save count of names
+            Int32 mapCount = settings.fileMap.Count;
+            bwFile.Write(mapCount);
+            //save all files
+            foreach (string file in settings.fileList)
+            {
+                bwFile.Write(file);
+            }
+            foreach (string map in settings.fileMap)
+            {
+                bwFile.Write(map);
+            }
+            bwFile.Flush();
+            bwFile.Close();
+        }
+
+        private void loadLocker()
+        {
+            if (File.Exists(locker.homeDir + "Locker.dat"))
+            {
+                settings.fileList.Clear();
+                settings.fileMap.Clear();
+                FileStream fskey = new FileStream(locker.homeDir + "Locker.dat", FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fskey);
+                int FileCount = br.ReadInt32();
+                int MapCount = br.ReadInt32();
+                string file;
+                int i;
+                for (i = 0; i < FileCount; i++)
+                {
+                    file = br.ReadString();
+                    settings.fileList.Add(file);
+                }
+                for (i = 0; i < MapCount; i++)
+                {
+                    file = br.ReadString();
+                    settings.fileMap.Add(file);
+                }
+                br.Close();
+            }
+            else
+            {
+                saveLocker();
+            }
         }
 
         private void onKilling(object sender, FormClosingEventArgs e)

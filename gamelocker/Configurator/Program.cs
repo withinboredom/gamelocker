@@ -46,8 +46,11 @@ namespace Configurator
                 settings.fileMap.Clear();
                 OptionsForm options = new OptionsForm();
                 options.ShowDialog();
+                settings.Save();
+                Application.Restart();
             }
             settings.Save();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PlayGame());

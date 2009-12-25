@@ -264,7 +264,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GameLockerBeta"
         "ProductCode" = "8:{7959C3B7-CA70-452B-A214-73C91D480D14}"
-        "PackageCode" = "8:{CED61DFB-227A-4486-8569-84CDACBE3CEF}"
+        "PackageCode" = "8:{F00A33DF-131B-4D41-B62C-9AF2C27A5BC1}"
         "UpgradeCode" = "8:{E20DE6EA-B0FC-4EF3-AF69-5630D0E42244}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
